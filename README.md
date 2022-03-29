@@ -35,7 +35,7 @@ Screenshot
 🟩 Must have a folder structure that meets the MVC paradigm  
 🟩 Must include authentication (express-session and cookies)  
 🟩 Must protect API keys and sensitive information with environment variables  
-🟩 Must be deployed using Heroku
+✅ Must be deployed using Heroku
 
 > ✅ https://bootcamp-project-2-quickcook.herokuapp.com
 
