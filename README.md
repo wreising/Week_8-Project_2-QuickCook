@@ -2,7 +2,7 @@
 
 ## QuickCook!
 
-``
+
 *Project Requirements*
 Must use Node.js and Express.js to create a RESTful API
 Must use MySQL and the Sequelize ORM for the database
@@ -17,4 +17,4 @@ Must be responsive
 Must be interactive (i.e., accept and respond to user input)
 Must meet good-quality coding standards (file structure, best practices, etc.)
 Must have a professional README (unique name, description, link to the deployed app)
-``
+
