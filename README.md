@@ -1,10 +1,10 @@
-#QuickCook
+# QuickCook
 
-##Recipe Manager for quick, short ingertient list, recipies.
+## Recipe Manager for quick, short ingertient list, recipies.
 
 ---
 
-##Project Descrioption:
+## Project Descrioption:
 
 R
 
@@ -12,13 +12,13 @@ Screenshot
 
 ---
 
-Usage:
+## Usage:
 
 
 
 ---
 
-##Project Requirements
+## Project Requirements
 
 
 🟩 Must use Node.js and Express.js to create a 🟩 RESTful API  
