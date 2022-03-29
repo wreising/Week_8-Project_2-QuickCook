@@ -8,7 +8,7 @@
 🟩 Must use MySQL and the Sequelize ORM for the database  
 🟩 Must have both GET and POST routes for retrieving and adding new data  
 🟩 Must use at least one new library, package, or technology that we haven’t discussed  
-  🟩 https://github.com/markedjs/marked
+🟩 https://github.com/markedjs/marked
 🟩 Must have a folder structure that meets the MVC paradigm  
 🟩 Must include authentication (express-session and cookies)  
 🟩 Must protect API keys and sensitive information with environment variables  
