@@ -27,8 +27,8 @@ Screenshot
 🟩 Must use at least one new library, package, or technology that we haven’t discussed
 
 
-> 🟩 https://github.com/markedjs/marked 
-> 🟩 https://reactjs.org 
+> 🟩 https://github.com/markedjs/marked  
+> 🟩 https://reactjs.org  
 > 🟩 https://github.com/markedjs/marked  
 
 
