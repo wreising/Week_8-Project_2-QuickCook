@@ -3,9 +3,9 @@
 ## QuickCook!
 
 
-*Project Requirements*
-Must use Node.js and Express.js to create a RESTful API
-Must use MySQL and the Sequelize ORM for the database
+*Project Requirements*  
+Must use Node.js and Express.js to create a RESTful API  
+Must use MySQL and the Sequelize ORM for the database  
 Must have both GET and POST routes for retrieving and adding new data
 Must use at least one new library, package, or technology that we haven’t discussed
 Must have a folder structure that meets the MVC paradigm
