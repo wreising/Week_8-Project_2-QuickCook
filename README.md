@@ -1,10 +1,27 @@
-# Week_8-Project_2-QuickCook
+#QuickCook
 
-## QuickCook!
+##Recipe Manager for quick, short ingertient list, recipies.
+
+---
+
+##Project Descrioption:
+
+R
+
+Screenshot
+
+---
+
+Usage:
 
 
-*Project Requirements*  
-🟩 Must use Node.js and Express.js to create a RESTful API  
+
+---
+
+##Project Requirements
+
+
+🟩 Must use Node.js and Express.js to create a 🟩 RESTful API  
 🟩 Must use MySQL and the Sequelize ORM for the database  
 🟩 Must have both GET and POST routes for retrieving and adding new data  
 🟩 Must use at least one new library, package, or technology that we haven’t discussed
