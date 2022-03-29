@@ -10,7 +10,7 @@
 🟩 Must use at least one new library, package, or technology that we haven’t discussed
 
 
-🟩 https://github.com/markedjs/marked
+> 🟩 https://github.com/markedjs/marked
 
 
 🟩 Must have a folder structure that meets the MVC paradigm  
