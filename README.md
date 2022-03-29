@@ -4,7 +4,7 @@
 
 ---
 
-## Project Descrioption:
+## Project Description:
 
 R
 
