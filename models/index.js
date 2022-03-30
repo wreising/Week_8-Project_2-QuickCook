@@ -1,7 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require('sequelize')
+const sequelize = require('../config/connection')
 
-class Dish extends Model { }
+class Recipe extends Model { }
 
 Recipe.init(
   {
@@ -89,6 +89,6 @@ Recipe.init(
     underscored: true,
     modelName: 'dish',
   }
-);
+)
 
-module.exports = Recipe;
+module.exports = Recipe
