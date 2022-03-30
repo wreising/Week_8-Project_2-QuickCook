@@ -8,3 +8,7 @@
   width: 100%;
   justify-content: space-around;
 }
+
+.postBody {
+  background-color: bisque;
+}
