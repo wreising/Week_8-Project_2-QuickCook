@@ -51,13 +51,13 @@ Recipe.init(
       type: DataType.STRING
       allowNull: true
     },
-    q5quantity: {
-      type: DataType.STRING
-      allowNull: true
-    },
     ingredient5: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    q5quantity: {
+      type: DataType.STRING
+      allowNull: true
     },
     instructions: {
       type: DataTypes.STRING
