@@ -3,8 +3,7 @@ const sequelize = require('../config')
 
 class Recipe extends Model { }
 
-Recipe.init(
-  {
+Recipe.init({
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -13,82 +12,81 @@ Recipe.init(
     },
     recipe_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     description: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: true
     },
     ingredient1: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     q1quantity: {
-      type: DataType.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     ingredient2: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     q1quantity: {
-      type: DataType.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     ingredient3: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     q3quantity: {
-      type: DataType.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     ingredient4: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     q4quantity: {
-      type: DataType.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     q5quantity: {
-      type: DataType.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     ingredient5: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     instructions: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
       allowNull: false
     },
     vegetarian: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
       allowNull: false
     },
     difficultyHard: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
       default: false
-    }
+    },
     photoLink: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     source: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     meal: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
       allowNull: true
-    }
-  {
+    },
+  }, {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'dish',
-  }
-)
+    modelName: 'dish'
+  })
 
 module.exports = Recipe
