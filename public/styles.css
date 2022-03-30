@@ -9,6 +9,10 @@
   justify-content: space-around;
 }
 
+.headerTitle {
+  margin-top: 2%;
+}
+
 .postBody {
   background-color: bisque;
 }
