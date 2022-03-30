@@ -1,8 +1,3 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
-
-class Dish extends Model { }
-
 Recipe.init(
   {
     id: {
@@ -90,5 +85,3 @@ Recipe.init(
     modelName: 'dish',
   }
 );
-
-module.exports = Recipe;
