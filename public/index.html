@@ -11,9 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./script.js" ></script>
-  <title>Quick Cook</title>
+  <title>Quick Cook - Easy Meals for Less</title>
 </head>
 <body class="mainFont">
+<!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Home</a>
@@ -41,14 +42,18 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Submit</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+          </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="ie. beef" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
+<!-- header (decorative) -->
   <header class="header">
     <div>
       <img src="https://www.simplyrecipes.com/thmb/0JyFht2N7lxkcda_6EvZviGoi3M=/2000x1333/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__07__Fresh-Tomato-Salsa-LEAD-2-2699ad8059ba4067b222c742bcf318da.jpg" class="d-block" alt="salsa.jpg" height="100">
@@ -56,9 +61,8 @@
     <div>
       <img src="https://www.thespruceeats.com/thmb/hl4lkmdLO7tj1eDCsGbakfk97Co=/3088x2055/filters:fill(auto,1)/marinated-top-round-steak-3060302-hero-02-ed071d5d7e584bea82857112aa734a94.jpg" class="d-block" alt="steak.jpg" height="100">
     </div>
-    <div class="text-center">
+    <div class="text-center headerTitle">
       <h1>Quick Cook</h1>
-      <p>Meals for Less Time, Money, and Energy</p>
     </div>
     <div>
       <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/03/1484784941-white-cheddar-carbonaral1.jpg" class="d-block" alt="carbonara.jpg" height="100">
@@ -67,6 +71,31 @@
       <img src="https://www.simplyrecipes.com/thmb/NjeZWy8FiuY6fn7Og-TYOGUecTU=/2000x1334/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__12__Southern-Cornbread-LEAD-6-5b5864b44014465599abcfc0725a1fee.jpg" class="d-block" alt="cornbread.jpg" height="100">
     </div>
   </header>
+<!-- Login Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <input type="text" class="form-control" placeholder="ezchef@email.com" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Password</span>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="postBody"></div>
 
