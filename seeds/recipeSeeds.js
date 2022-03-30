@@ -17,7 +17,7 @@ const recipeData = [
     instructions: `1) Preheat the oven to 170ºC / 325ºF/ gas 3.
     2) Place a 30cm shallow casserole pan on a high heat, strip in the rosemary leaves, add 1 tablespoon of olive oil, and crisp up for 1 minute while you dice the lamb into 3cm chunks.
     3) Scoop out the rosemary and put aside, adding the lamb to the pan for 2 minutes to get some colour.
-    4) Meanwhile, squash the olives and remove the stones.Drain the pickled onions and stir into the pan with the olives.Toss well, then pour in the tinned tomatoes, breaking them up with a wooden spoon, as well as 2 tins’ worth of water.
+    4) Meanwhile, squash the olives and remove the stones.Drain the pickled onions and stir into the pan with the olives.Toss well, then pour in the tinned tomatoes, breaking them up with a wooden spoon, as well as 2 tins worth of water.
     5) Cover and cook in the oven for 2 hours, or until thick, delicious and tender, stirring halfway and loosening with a splash of water, if needed.
     6) Taste, season to perfection with sea salt and black pepper, sprinkle over the crispy rosemary leaves, and serve.Simple`,
     vegetarian: false,
