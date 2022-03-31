@@ -1,20 +1,14 @@
-module.exports = {
-  Recipe: require('./Recipe.js'),
-  User: require('./User.js')
-}
-
 const { Model, DataTypes } = require('sequelize')
-const sequelize = require('../config/connection')
+const sequelize = require('../config')
 
 class Recipe extends Model { }
 
-Recipe.init(
-  {
+Recipe.init({
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     recipe_name: {
       type: DataTypes.STRING,
@@ -88,11 +82,11 @@ Recipe.init(
       type: DataTypes.STRING,
       allowNull: true
     },
+  }, {
     sequelize,
     freezeTableName: true,
     underscored: true,
     modelName: 'dish'
-  }
-)
+  })
 
 module.exports = Recipe
