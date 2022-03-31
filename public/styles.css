@@ -1,0 +1,18 @@
+.mainFont {
+  font-family: 'Lora', serif;
+}
+
+.header {
+  background-color: rgb(108, 185, 185);
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.headerTitle {
+  margin-top: 2%;
+}
+
+.postBody {
+  background-color: bisque;
+}
