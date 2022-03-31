@@ -53,3 +53,7 @@ const recipeData = [
     meal: 'dinner'
   }
 ]
+
+const seedRecipes = () => Recipe.bulkCreate(recipeData)
+
+module.exports = seedRecipes
