@@ -1,9 +1,11 @@
-var express = require('express');
+var express = require('express').Router()
 var router = express.Router();
 var db = require('../database');
+
 router.get('/form', function (req, res, next) {
   res.render('recipes');
 });
+
 router.post('/create', function (req, res, next) {
 
   // store all the user input data
@@ -17,4 +19,5 @@ router.post('/create', function (req, res, next) {
   });
   res.redirect('/users/form');  // redirect to user form page after inserting the data
 });
+
 module.exports = router;
