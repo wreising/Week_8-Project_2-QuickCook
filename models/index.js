@@ -4,7 +4,7 @@ module.exports = {
 }
 
 const { Model, DataTypes } = require('sequelize')
-const sequelize = require('../config/connection')
+const sequelize = require('../config/index')
 
 class Recipe extends Model { }
 
