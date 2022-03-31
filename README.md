@@ -1,6 +1,6 @@
 # QuickCook
 
-## Recipe Manager for quick, short ingertient list, recipies.
+## Recipe Manager for quick, short ingredient list, recipes.
 
 ---
 

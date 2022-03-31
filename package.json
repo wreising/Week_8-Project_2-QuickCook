@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "description": "## Recipe Manager for quick, short ingertient list, recipies.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -18,5 +20,14 @@
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
     "sequelize": "^6.17.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wreising/Week_8-Project_2-QuickCook.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/wreising/Week_8-Project_2-QuickCook/issues"
+  },
+  "homepage": "https://github.com/wreising/Week_8-Project_2-QuickCook#readme"
 }
