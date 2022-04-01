@@ -24,26 +24,12 @@ module.exports = {
           err.message ||`Error occurred while creating the Recipe.`
         });
       });
-    };
-
-
-    const response = {
-      staus: 'success',
-      body: newRecipe,
-    };
-
-    res.json(response);
-  } else {
-    res.json(`Error in posting feedback`);
-  }
-  },
+    },
 findAll(req, res){
   const title = req.query.title;
   let condition = title ? {
     title: {
-      [Op.like]: `%${title}%`
-    }
-  }
+      [Op.like]: `%${title}%`} } : null;
   Recipe.findAll({ where: condition })
     .then(data => {
       res.send(data);
@@ -79,7 +65,7 @@ update(req, res){
     where: { id: id }
   })
     .then(num => {
-      if (num === 1) {
+      if (num == 1) {
         res.send({
           message: "Recipe was updated successfully."
         });
@@ -129,7 +115,4 @@ deleteAll(req, res) {
       });
     });
 },
-
 };
-
-
