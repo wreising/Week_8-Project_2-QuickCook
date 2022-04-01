@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const { Sequelize } = require('sequelize')
 
 //make sure to create your .env with user and pass and change to @localhost/quickcook_db
