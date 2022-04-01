@@ -1,14 +1,12 @@
 {
   "name": "group-project2",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "description": "## Recipe Manager for quick, short ingertient list, recipies.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seed": "node seed.js"
+    "seed": "node seeds/index.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,4 +1,4 @@
-const seedRecipes = require('./recipe_seeds')
+const seedRecipes = require('./recipeSeeds')
 
 const sequelize = require('../config/connection')
 

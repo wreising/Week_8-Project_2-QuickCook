@@ -170,7 +170,7 @@ const recipeData = [
     2) Place a large casserole pan on a high heat, and fry the lamb shanks in 1 tablespoon of olive oil, while you halve, wash and roughly chop the leeks.
     3) Add them to the pan with the pearl barley, umami paste and a pinch of sea salt and black pepper, then stir well.
     4) Pour in the ale and 1 tablespoon of red wine vinegar, then cover with 1.2 litres of water.
-    5) Cook in the oven for 2 hours 30 minutes, or until tender, then dish on up. Easy!
+    5) Cook in the oven for 2 hours 30 minutes, or until tender, then dish on up. Easy!`,
     vegetarian: false,
     difficultyHard: true,
     photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/89080973.jpg?tr=w-800,h-1066',
@@ -178,3 +178,7 @@ const recipeData = [
     meal: 'dinner'
   }
 ]
+
+const seedRecipes = () => Recipe.bulkCreate(recipeData)
+
+module.exports = seedRecipes
