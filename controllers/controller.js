@@ -1,7 +1,7 @@
-const { UUID } = require("sequelize/types");
+const { UUID } = require('sequelize');
 const db = require("../models");
 const Recipe = db.quickcook;
-const Op = db.Sequelize.Op;
+
 module.exports = {
   create(req, res){
     if (!req.body.title){
