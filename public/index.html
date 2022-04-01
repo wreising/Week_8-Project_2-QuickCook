@@ -102,13 +102,26 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Recipe Submission</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" id="submitModalBody">
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Recipe Name</span>
             <input type="text" class="form-control" aria-label="recipeName" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Short Description</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div> <br>
+          <p>Note: Please include at least one ingredient.</p>
+          <div id="ingredientGroup">
+            <div class="input-group">
+              <span class="input-group-text">Ingredient</span>
+              <input type="text" aria-label="Amount" placeholder="Amount" class="form-control">
+              <input type="text" aria-label="Ingredient" placeholder="Ingredient" class="form-control">
+            </div>
+            <button class="btn btn-outline-secondary" type="button" id="btnIngredient">+</button>
           </div>
         </div>
         <div class="modal-footer">

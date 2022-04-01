@@ -87,6 +87,10 @@ Recipe.init({
     beforeCreate: async (newRecipe) => {
       newRecipe.recipe_name = "#" + recipe_name
       return newRecipe
+    },
+    beforeCreate: async (newRecipe) => {
+      newRecipe.recipe_name = "#" + recipe_name
+      return newRecipe
     }
   },
   sequelize,
