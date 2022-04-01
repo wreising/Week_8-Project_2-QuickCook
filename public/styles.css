@@ -11,6 +11,7 @@
 
 .headerTitle {
   margin-top: 2%;
+  font-weight: bolder;
 }
 
 .searchBody {
@@ -19,7 +20,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  height: 700px;
+  height: 730px;
 }
 
 #overlay {
@@ -38,6 +39,16 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 30%;
+}
+
+.textFormat {
+  display: flex;
+  font-size: x-large;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .footerFormat {
