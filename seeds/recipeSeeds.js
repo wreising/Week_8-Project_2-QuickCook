@@ -3,7 +3,7 @@ const { Recipe } = require('../models')
 const recipeData = [
   {
     recipe_name: 'Lamb Stew',
-    despcription: 'Slow-cooked in an olive & tomato sauce.',
+    description: 'Slow-cooked in an olive & tomato sauce.',
     ingredient1: 'Rosemary',
     q1quantity: '1/2 bunch',
     ingredient2: 'Lamb shoulder, bone out',
@@ -29,7 +29,7 @@ const recipeData = [
   },
   {
     recipe_name: 'Rose pesto prawn pasta',
-    despcription: 'Beautiful King Shrimp, Angel-Hair pasta & lots of garlic.',
+    description: 'Beautiful King Shrimp, Angel-Hair pasta & lots of garlic.',
     ingredient1: 'Shell on Shrimp',
     q1quantity: '300g',
     ingredient2: 'Cloves of Garlic',
@@ -50,6 +50,50 @@ const recipeData = [
     difficultyHard: false,
     photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/107865056.jpg?tr=w-800,h-1066',
     source: 'https://www.jamieoliver.com/recipes/prawn-recipes/rose-pesto-prawn-pasta/',
+    meal: 'dinner'
+  },
+  {
+    recipe_name: 'Black tahnini noodles',
+    description: 'With Teriyaki & Punchy Lime',
+    ingredient1: 'fine rice noodles',
+    q1quantity: '150g',
+    ingredient2: 'limes',
+    q2quantity: '2',
+    ingredient3: 'Water Cress',
+    q3quantity: '1 bunch',
+    ingredient4: 'Black Sesame Seeds',
+    q4quantity: '50g',
+    ingredient5: 'Teriyaki Sauce',
+    q5quantity: '2 TBsp',
+    instructions: `1) Cook the noodles in boiling saltedd water according to the packet instructions, then drain, reserving a mugful of cooking water. Meanwhile, finely gratethe zest of 1 lime, snip the cress and put both aside.
+    2) Toast the seame seeds in a dry non-stick frying pan on high heat for 1 minute, tossing regularly. Reserving one quarter of the seeds, pound the restin in a pestle and mortar until fairly fine, then muddle in the teriyaki and the juice of 1 lime. Tast, season to perfection with sea salt and black pepper, and you've got black tahini!
+    3) Toss the noodles and black tahini together. loosening with a splash of reserved noodle water. Serve sprinkled with the lime zest, cress and reserved seeps, with lime weges ont he side, ofr squeezing over.`,
+    vegetarian: true,
+    difficultyHard: false,
+    photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/108763671.jpg?tr=w-800,h-1066',
+    source: 'https://www.jamieoliver.com/recipes/noodle-recipes/black-tahini-noodles/',
+    meal: 'dinner'
+  },
+  {
+    recipe_name: 'Black tahnini noodles',
+    description: 'With Teriyaki & Punchy Lime',
+    ingredient1: 'fine rice noodles',
+    q1quantity: '150g',
+    ingredient2: 'limes',
+    q2quantity: '2',
+    ingredient3: 'Water Cress',
+    q3quantity: '1 bunch',
+    ingredient4: 'Black Sesame Seeds',
+    q4quantity: '50g',
+    ingredient5: 'Teriyaki Sauce',
+    q5quantity: '2 TBsp',
+    instructions: `1) Cook the noodles in boiling saltedd water according to the packet instructions, then drain, reserving a mugful of cooking water. Meanwhile, finely gratethe zest of 1 lime, snip the cress and put both aside.
+    2) Toast the seame seeds in a dry non-stick frying pan on high heat for 1 minute, tossing regularly. Reserving one quarter of the seeds, pound the restin in a pestle and mortar until fairly fine, then muddle in the teriyaki and the juice of 1 lime. Tast, season to perfection with sea salt and black pepper, and you've got black tahini!
+    3) Toss the noodles and black tahini together. loosening with a splash of reserved noodle water. Serve sprinkled with the lime zest, cress and reserved seeps, with lime weges ont he side, ofr squeezing over.`,
+    vegetarian: true,
+    difficultyHard: false,
+    photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/108763671.jpg?tr=w-800,h-1066',
+    source: 'https://www.jamieoliver.com/recipes/noodle-recipes/black-tahini-noodles/',
     meal: 'dinner'
   }
 ]

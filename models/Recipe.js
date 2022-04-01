@@ -18,11 +18,15 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: true
   },
+  q1quantity: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
   ingredient1: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  q1quantity: {
+  q2quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -30,7 +34,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q1quantity: {
+  q3quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -38,17 +42,13 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q3quantity: {
+  q4quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
   ingredient4: {
     type: DataTypes.STRING,
     allowNull: false
-  },
-  q4quantity: {
-    type: DataTypes.STRING,
-    allowNull: true
   },
   q5quantity: {
     type: DataTypes.STRING,
@@ -83,16 +83,25 @@ Recipe.init({
     allowNull: true
   },
 }, {
-  hooks: {
-    beforeCreate: async (newRecipe) => {
-      newRecipe.recipe_name = "#" + recipe_name
-      return newRecipe
-    },
-    beforeCreate: async (newRecipe) => {
-      newRecipe.recipe_name = "#" + recipe_name
-      return newRecipe
-    }
-  },
+  // hooks: {
+  //   beforeCreate: async (newRecipe) => {
+  //     newRecipe.recipe_name = "# " + recipe_name,
+  //       newRecipe.description = "## **" + description + "**",
+  //       newRecipe.q1quantity = "#### " + q1quantity,
+  //       newRecipe.ingredient1 = "#### " + ingredient1,
+  //       newRecipe.q2quantity = "#### " + q2quantity,
+  //       newRecipe.ingredient2 = "#### " + ingredient2,
+  //       newRecipe.q3quantity = "#### " + q3quantity,
+  //       newRecipe.ingredient3 = "#### " + ingredient3,
+  //       newRecipe.q4quantity = "#### " + q4quantity,
+  //       newRecipe.ingredient4 = "#### " + ingredient4,
+  //       newRecipe.q5quantity = "#### " + q5quantity,
+  //       newRecipe.ingredient5 = "#### " + ingredient5,
+  //       newRecipe.instructions = "### " + instructions,
+  //       newRecipe.meal = "####" + meal,
+  //     return newRecipe
+  //  },
+  //},
   sequelize,
   freezeTableName: true,
   underscored: true,
