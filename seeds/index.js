@@ -1,6 +1,6 @@
 const seedRecipes = require('./recipeSeeds')
 
-const sequelize = require('../config/connection')
+const sequelize = require('../config/index')
 
 const seedAll = async () => {
   await sequelize.sync({ force: true })
