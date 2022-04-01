@@ -11,11 +11,11 @@ Recipe.init({
     autoIncrement: true,
   },
   recipe_name: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(1000),
     allowNull: false
   },
   description: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(1000),
     allowNull: true
   },
   q1quantity: {
@@ -59,7 +59,7 @@ Recipe.init({
     allowNull: false
   },
   instructions: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(5000),
     allowNull: false
   },
   vegetarian: {
