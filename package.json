@@ -1,8 +1,6 @@
 {
   "name": "group-project2",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "description": "## Recipe Manager for quick, short ingertient list, recipies.",
   "main": "server.js",
   "scripts": {
@@ -29,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/wreising/Week_8-Project_2-QuickCook/issues"
   },
-  "homepage": "https://github.com/wreising/Week_8-Project_2-QuickCook#readme"
+  "homepage": "https://github.com/wreising/Week_8-Project_2-QuickCook#readme",
+  "devDependencies": {}
 }
