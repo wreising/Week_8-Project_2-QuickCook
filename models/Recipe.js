@@ -18,7 +18,7 @@ Recipe.init({
     type: DataTypes.STRING(1000),
     allowNull: true
   },
-  q1quantity: {
+  ing1quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -26,7 +26,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q2quantity: {
+  ing2quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -34,7 +34,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q3quantity: {
+  ing3quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -42,7 +42,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q4quantity: {
+  ing4quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -50,7 +50,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q5quantity: {
+  ing5quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -64,11 +64,11 @@ Recipe.init({
   },
   vegetarian: {
     type: DataTypes.BOOLEAN,
-    allowNull: false
+    allowNull: true
   },
   difficultyHard: {
     type: DataTypes.BOOLEAN,
-    default: false
+    default: true
   },
   photoLink: {
     type: DataTypes.STRING,
