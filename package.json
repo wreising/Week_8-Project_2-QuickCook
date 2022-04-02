@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/wreising/Week_8-Project_2-QuickCook/issues"
   },
-  "homepage": "https://github.com/wreising/Week_8-Project_2-QuickCook#readme"
+  "homepage": "https://github.com/wreising/Week_8-Project_2-QuickCook#readme",
+  "devDependencies": {}
 }
