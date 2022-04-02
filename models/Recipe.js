@@ -22,10 +22,6 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: true
   },
-  q1quantity: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
   ingredient1: {
     type: DataTypes.STRING,
     allowNull: false
