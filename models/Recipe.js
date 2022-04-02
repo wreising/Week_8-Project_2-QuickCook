@@ -64,11 +64,11 @@ Recipe.init({
   },
   vegetarian: {
     type: DataTypes.BOOLEAN,
-    allowNull: true
+    allowNull: false
   },
   difficultyHard: {
     type: DataTypes.BOOLEAN,
-    default: true
+    default: false
   },
   photoLink: {
     type: DataTypes.STRING,
@@ -84,24 +84,10 @@ Recipe.init({
   },
 }, {
   // hooks: {
-  //   beforeCreate: async (newRecipe) => {
-  //     newRecipe.recipe_name = "# " + recipe_name,
-  //       newRecipe.description = "## **" + description + "**",
-  //       newRecipe.q1quantity = "#### " + q1quantity,
-  //       newRecipe.ingredient1 = "#### " + ingredient1,
-  //       newRecipe.q2quantity = "#### " + q2quantity,
-  //       newRecipe.ingredient2 = "#### " + ingredient2,
-  //       newRecipe.q3quantity = "#### " + q3quantity,
-  //       newRecipe.ingredient3 = "#### " + ingredient3,
-  //       newRecipe.q4quantity = "#### " + q4quantity,
-  //       newRecipe.ingredient4 = "#### " + ingredient4,
-  //       newRecipe.q5quantity = "#### " + q5quantity,
-  //       newRecipe.ingredient5 = "#### " + ingredient5,
-  //       newRecipe.instructions = "### " + instructions,
-  //       newRecipe.meal = "####" + meal,
-  //     return newRecipe
-  //  },
-  //},
+  //   beforeCreate: (newRecipe) => {
+  //     newRecipe.recipe_name += ' Hi'
+  //   }
+  // },
   sequelize,
   freezeTableName: true,
   underscored: true,
