@@ -4,12 +4,12 @@ const sequelize = require('../config')
 class Recipe extends Model { }
 
 Recipe.init({
-  id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    primaryKey: true,
-    autoIncrement: true,
-  },
+  // id: {
+  //   type: DataTypes.INTEGER,
+  //   allowNull: false,
+  //   primaryKey: true,
+  //   autoIncrement: true,
+  // },
   recipe_name: {
     type: DataTypes.STRING(1000),
     allowNull: false
@@ -18,15 +18,11 @@ Recipe.init({
     type: DataTypes.STRING(1000),
     allowNull: true
   },
-  ing1quantity: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
   ingredient1: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  ing2quantity: {
+  ing1quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -34,7 +30,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  ing3quantity: {
+  ing2quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -42,7 +38,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  ing4quantity: {
+  ing3quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -50,7 +46,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  ing5quantity: {
+  ing4quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -58,17 +54,21 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
+  ing5quantity: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
   instructions: {
     type: DataTypes.STRING(5000),
     allowNull: false
   },
   vegetarian: {
     type: DataTypes.BOOLEAN,
-    allowNull: false
+    allowNull: true
   },
   difficultyHard: {
     type: DataTypes.BOOLEAN,
-    default: false
+    allowNull: true
   },
   photoLink: {
     type: DataTypes.STRING,

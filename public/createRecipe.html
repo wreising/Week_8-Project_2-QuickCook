@@ -9,41 +9,41 @@
   <!--====form section start====-->
   <div class="recipe-entry">
     <h2>Create New Recipe</h2>
-    <form action="/recipe/create" method="POST">
+    <form action="api/recipes" method="POST">
       <label>Recipe Name</label>
         <input type="text" placeholder="Enter Recipe Name" name="recipe_name" required><br><br>
       <textarea name="description" rows="15" columns="30">Enter Description</textarea><br><br>
       <label>Ingredient 1</label>
         <input type="text" placeholder="Enter 1st Ingredient" name="ingredient1" required><br><br>
       <label>Ingredient 1 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="q1quantity" required><br><br>
+        <input type="text" placeholder="Enter Quantity" name="ing1quantity" required><br><br>
       <label>Ingredient 2</label>
         <input type="text" placeholder="Enter 2nd Ingredient" name="ingredient2" required><br><br>
       <label>Ingredient 2 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="q2quantity" required><br><br>
+        <input type="text" placeholder="Enter Quantity" name="ing2quantity" required><br><br>
       <label>Ingredient 3</label>
         <input type="text" placeholder="Enter 3rd Ingredient" name="ingredient3" required><br><br>
       <label>Ingredient 3 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="q3quantity" required><br><br>
+        <input type="text" placeholder="Enter Quantity" name="ing3quantity" required><br><br>
       <label>Ingredient 4</label>
         <input type="text" placeholder="Enter 4th Ingredient" name="ingredient4" required><br><br>
       <label>Ingredient 4 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="q4quantity" required><br><br>
+        <input type="text" placeholder="Enter Quantity" name="ing4quantity" required><br><br>
       <label>Ingredient 5</label>
         <input type="text" placeholder="Enter 5th Ingredient" name="ingredient5" required><br><br>
       <label>Ingredient 5 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="q5quantity" required><br><br>
+        <input type="text" placeholder="Enter Quantity" name="ing5quantity" required><br><br>
       <textarea name="instructions" rows="15" columns="30">Enter Instructions</textarea><br><br>
       <label>Vegetarian</label>
-        <input type="checkbox" name="vegetarian" required><br><br>
+        <input type="checkbox" name="vegetarian" value="true"><br><br>
       <label>Difficulty - Hard?</label>
-        <input type="checkbox" name="difficultyHard" required><br><br>
+        <input type="checkbox" name="difficultyHard" value="true"><br><br>
       <label>Photo Link</label>
-        <input type="text" placeholder="Enter URL" name="photoLink" required><br><br>
+        <input type="text" placeholder="Enter URL" name="photoLink" ><br><br>
       <label>Source</label>
-        <input type="text" placeholder="Enter URL" name="source" required><br><br>
+        <input type="text" placeholder="Enter URL" name="source"><br><br>
       <label>Meal Type</label>
-        <input type="text" placeholder="Enter Meal Type" name="meal" required><br><br>
+        <input type="text" placeholder="Enter Meal Type" name="meal"><br><br>
       <button type="submit">Submit</button>
   </div>
   </div>
