@@ -72,6 +72,7 @@
     </div>
   </header>
 <!-- Login Modal -->
+
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -79,19 +80,21 @@
           <h5 class="modal-title" id="exampleModalLabel">Login</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <form action="userRoutes/users" method="POST">
         <div class="modal-body">
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Email</span>
+            <span class="input-group-text" id="email">Email</span>
             <input type="text" class="form-control" placeholder="ezchef@email.com" aria-label="Username" aria-describedby="basic-addon1">
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Password</span>
+            <span class="input-group-text" id="password">Password</span>
             <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Log In</button>
+          <button type="submit" class="btn btn-primary">Log In</button>
+          </form>
         </div>
       </div>
     </div>
