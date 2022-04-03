@@ -4,16 +4,19 @@ const Recipe = db.quickcook;
 
 module.exports = {
   create(req, res){
+    //validate
     if (!req.body.title){
       res.status(400).send({
         message: `Content cannot be empty.`
       })
       return
     }
+    //create recipe
     const recipe = {
       title: req.body.title,
       description: req.body.description,
     };
+    //Save recipe in DB
     Recipe.create(recipe)
       .then(data => {
         res.send(data);
@@ -87,7 +90,7 @@ delete(req, res){
     where: { id: id }
   })
     .then(num => {
-      if (num === 1) {
+      if (num == 1) {
         res.send({
           message: 'Recipe was deleted successfully.'
         });
