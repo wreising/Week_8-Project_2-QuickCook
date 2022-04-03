@@ -70,8 +70,10 @@
     <div>
       <img src="https://www.simplyrecipes.com/thmb/NjeZWy8FiuY6fn7Og-TYOGUecTU=/2000x1334/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__12__Southern-Cornbread-LEAD-6-5b5864b44014465599abcfc0725a1fee.jpg" class="d-block" alt="cornbread.jpg" height="100">
     </div>
+    <a href="createRecipe.html">Create Recipe</a>
   </header>
 <!-- Login Modal -->
+
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -79,25 +81,28 @@
           <h5 class="modal-title" id="exampleModalLabel">Login</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <form action="api/users" method="POST">
         <div class="modal-body">
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Email</span>
+            <span class="input-group-text" id="email">Email</span>
             <input type="text" class="form-control" placeholder="ezchef@email.com" aria-label="Username" aria-describedby="basic-addon1">
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Password</span>
+            <span class="input-group-text" id="password">Password</span>
             <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Log In</button>
+          <button type="submit" class="btn btn-primary">Log In</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 
-<!-- Submit Recipe Modal
+<!-- Submit Recipe Modal -->
+<form id="recipe" action="api/recipes" method="POST">
   <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -126,7 +131,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary" onclick="submitRecipe()">Submit</button>
+          </form>
         </div>
       </div>
     </div>

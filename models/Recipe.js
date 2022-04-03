@@ -4,29 +4,25 @@ const sequelize = require('../config')
 class Recipe extends Model { }
 
 Recipe.init({
-  id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    primaryKey: true,
-    autoIncrement: true,
-  },
+  // id: {
+  //   type: DataTypes.INTEGER,
+  //   allowNull: false,
+  //   primaryKey: true,
+  //   autoIncrement: true,
+  // },
   recipe_name: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(1000),
     allowNull: false
   },
   description: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  q1quantity: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(1000),
     allowNull: true
   },
   ingredient1: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  q2quantity: {
+  ing1quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -34,7 +30,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q3quantity: {
+  ing2quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -42,7 +38,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q4quantity: {
+  ing3quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -50,7 +46,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q5quantity: {
+  ing4quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -58,17 +54,21 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  instructions: {
+  ing5quantity: {
     type: DataTypes.STRING,
+    allowNull: true
+  },
+  instructions: {
+    type: DataTypes.STRING(5000),
     allowNull: false
   },
   vegetarian: {
     type: DataTypes.BOOLEAN,
-    allowNull: false
+    allowNull: true
   },
   difficultyHard: {
     type: DataTypes.BOOLEAN,
-    default: false
+    allowNull: true
   },
   photoLink: {
     type: DataTypes.STRING,
@@ -83,25 +83,11 @@ Recipe.init({
     allowNull: true
   },
 }, {
-  hooks: {
-    beforeCreate: async (newRecipe) => {
-      newRecipe.recipe_name = "# " + recipe_name,
-        newRecipe.description = "## **" + description + "**",
-        newRecipe.q1quantity = "#### " + q1quantity,
-        newRecipe.ingredient1 = "#### " + ingredient1,
-        newRecipe.q2quantity = "#### " + q2quantity,
-        newRecipe.ingredient2 = "#### " + ingredient2,
-        newRecipe.q3quantity = "#### " + q3quantity,
-        newRecipe.ingredient3 = "#### " + ingredient3,
-        newRecipe.q4quantity = "#### " + q4quantity,
-        newRecipe.ingredient4 = "#### " + ingredient4,
-        newRecipe.q5quantity = "#### " + q5quantity,
-        newRecipe.ingredient5 = "#### " + ingredient5,
-        newRecipe.instructions = "### " + instructions,
-        newRecipe.meal = "####" + meal,
-      return newRecipe
-    },
-  },
+  // hooks: {
+  //   beforeCreate: (newRecipe) => {
+  //     newRecipe.recipe_name += ' Hi'
+  //   }
+  // },
   sequelize,
   freezeTableName: true,
   underscored: true,

@@ -1,19 +1,22 @@
-const { UUID } = require("sequelize/types");
+const { UUID } = require('sequelize');
 const db = require("../models");
 const Recipe = db.quickcook;
-const Op = db.Sequelize.Op;
+
 module.exports = {
   create(req, res){
+    //validate
     if (!req.body.title){
       res.status(400).send({
         message: `Content cannot be empty.`
       })
       return
     }
+    //create recipe
     const recipe = {
       title: req.body.title,
       description: req.body.description,
     };
+    //Save recipe in DB
     Recipe.create(recipe)
       .then(data => {
         res.send(data);
@@ -24,26 +27,12 @@ module.exports = {
           err.message ||`Error occurred while creating the Recipe.`
         });
       });
-    };
-
-
-    const response = {
-      staus: 'success',
-      body: newRecipe,
-    };
-
-    res.json(response);
-  } else {
-    res.json(`Error in posting feedback`);
-  }
-  },
+    },
 findAll(req, res){
   const title = req.query.title;
   let condition = title ? {
     title: {
-      [Op.like]: `%${title}%`
-    }
-  }
+      [Op.like]: `%${title}%`} } : null;
   Recipe.findAll({ where: condition })
     .then(data => {
       res.send(data);
@@ -79,7 +68,7 @@ update(req, res){
     where: { id: id }
   })
     .then(num => {
-      if (num === 1) {
+      if (num == 1) {
         res.send({
           message: "Recipe was updated successfully."
         });
@@ -101,7 +90,7 @@ delete(req, res){
     where: { id: id }
   })
     .then(num => {
-      if (num === 1) {
+      if (num == 1) {
         res.send({
           message: 'Recipe was deleted successfully.'
         });
@@ -129,7 +118,4 @@ deleteAll(req, res) {
       });
     });
 },
-
 };
-
-
