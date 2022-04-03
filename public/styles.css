@@ -1,5 +1,6 @@
 .mainFont {
   font-family: 'Lora', serif;
+  background-color:rgb(255, 236, 214);
 }
 
 .header {
@@ -59,6 +60,7 @@
 
 .createRecipeBody {
   display: flex;
+  flex-wrap: row;
   background-color: rgb(255, 236, 214);
   margin: 3%;
 }
