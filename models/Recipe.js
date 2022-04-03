@@ -18,7 +18,7 @@ Recipe.init({
     type: DataTypes.STRING(1000),
     allowNull: true
   },
-  q1quantity: {
+  ing1quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -26,7 +26,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q2quantity: {
+  ing2quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -34,7 +34,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q3quantity: {
+  ing3quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -42,7 +42,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q4quantity: {
+  ing4quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -50,7 +50,7 @@ Recipe.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  q5quantity: {
+  ing5quantity: {
     type: DataTypes.STRING,
     allowNull: true
   },
@@ -84,24 +84,10 @@ Recipe.init({
   },
 }, {
   // hooks: {
-  //   beforeCreate: async (newRecipe) => {
-  //     newRecipe.recipe_name = "# " + recipe_name,
-  //       newRecipe.description = "## **" + description + "**",
-  //       newRecipe.q1quantity = "#### " + q1quantity,
-  //       newRecipe.ingredient1 = "#### " + ingredient1,
-  //       newRecipe.q2quantity = "#### " + q2quantity,
-  //       newRecipe.ingredient2 = "#### " + ingredient2,
-  //       newRecipe.q3quantity = "#### " + q3quantity,
-  //       newRecipe.ingredient3 = "#### " + ingredient3,
-  //       newRecipe.q4quantity = "#### " + q4quantity,
-  //       newRecipe.ingredient4 = "#### " + ingredient4,
-  //       newRecipe.q5quantity = "#### " + q5quantity,
-  //       newRecipe.ingredient5 = "#### " + ingredient5,
-  //       newRecipe.instructions = "### " + instructions,
-  //       newRecipe.meal = "####" + meal,
-  //     return newRecipe
-  //  },
-  //},
+  //   beforeCreate: (newRecipe) => {
+  //     newRecipe.recipe_name += ' Hi'
+  //   }
+  // },
   sequelize,
   freezeTableName: true,
   underscored: true,
