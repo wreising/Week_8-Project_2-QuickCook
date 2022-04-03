@@ -126,7 +126,7 @@ const recipeData = [
     difficultyHard: true,
     photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/108100212.jpg?tr=w-800,h-1066',
     source: 'https://www.jamieoliver.com/recipes/beef-recipes/spicy-beef-cauli-rice/',
-    meal: 'dinner'
+    meal: 'lunch'
   },
   {
     recipe_name: 'Harissa squash salad',
@@ -176,6 +176,108 @@ const recipeData = [
     photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/89080973.jpg?tr=w-800,h-1066',
     source: 'https://www.jamieoliver.com/recipes/lamb-recipes/ale-barley-lamb-shanks/',
     meal: 'dinner'
+  },
+  {
+    recipe_name: "Buddy's flapjack bisuits",
+    description: 'Buttery, syrupy, crimbly goodness',
+    ingredient1: 'Unslated Butter',
+    ing1quantity: '100g',
+    ingredient2: 'Mixed Fruit and nuts',
+    ing2quantity: '100g',
+    ingredient3: 'Porridge oats',
+    ing3quantity: '100g',
+    ingredient4: 'Self-Rising flour',
+    ing4quantity: '100g',
+    ingredient5: 'Golden syrup',
+    ing5quantity: '100g',
+    instructions: `1) Preheat the oven to 180ºC/350ºF/gas 4.  
+    2) Line a deep 20cm square baking tin with greaseproof paper and rub with olive oil.  
+    3) Pulse the butter, dried fruit and nuts, oats and flour in a food processor until the mix comes together and away from the sides, then pulse in the syrup until fully combined.  
+    4) Transfer to the lined tin, flattening to the edges. Bake for 15 to 20 minutes, or until golden.  
+    5) CRemove from the oven, slice into 16 squares ready to cut, and leave to cool in the tin for 5 minutes.  
+    6) Use the paper to lift out on to a wire rack, and leave to cool completely. Simple, easy, delicious – spread the word!`,
+    vegetarian: true,
+    difficultyHard: false,
+    photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/105677969.jpg?tr=w-800,h-1066',
+    source: 'https://www.jamieoliver.com/recipes/oat-recipes/buddy-s-flapjack-biscuits/',
+    meal: 'breakfast'
+  },
+  {
+    recipe_name: 'Italian seared beef',
+    description: 'Beautiful Rump Steak with Green Pesto and Paresean',
+    ingredient1: 'Pine Nuts',
+    ing1quantity: '1 TBsp',
+    ingredient2: 'Rump Steak',
+    ing2quantity: '250g',
+    ingredient3: 'Green Pesto',
+    ing3quantity: '2 heaping tsp',
+    ingredient4: 'Rocket',
+    ing4quantity: '40g',
+    ingredient5: 'Parmesean Cheese',
+    ing5quantity: '15g',
+    instructions: `1) Put a large non-stick frying pan on a high heat, toasting the pine nuts as it heats up, tossing regularly and removing when golden.  
+    2) Cut the fat off the rump, finely chop the fat and place in the pan to render and crisp up while you cut the sinew off the rump, then season it with sea salt and black pepper.  
+    3) Place between two sheets of greaseproof paper and bash to 1cm thick with a rolling pin, also tenderizing the meat.  
+    4) TScoop out and reserve the crispy bits of fat, then sear the steak in the hot pan for 1 minute on each side, until golden but still blushing in the middle. Remove to a board.  
+    5) Spread the pesto over a sharing platter. Thinly slice the steak at an angle, then plate up. Pile the rocket on top, then scatter over the pine nuts and reserved crispy fat, if you like.  
+    6) Mix the steak resting juices with 1 tablespoon of extra virgin olive oil and drizzle over. Shave over the Parmesan, tossing before serving.`,
+    vegetarian: false,
+    difficultyHard: true,
+    photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/89080985.jpg?tr=w-800,h-1066',
+    source: 'https://www.jamieoliver.com/recipes/beef-recipes/italian-seared-beef/',
+    meal: 'dinner'
+  },
+  {
+    recipe_name: 'Sweet and Sour Chicken Noodles',
+    description: 'With Chicken Skin Crakling',
+    ingredient1: 'Chicken Thighs',
+    ing1quantity: '2 x 200g',
+    ingredient2: 'Rice Noodles',
+    ing2quantity: '150g',
+    ingredient3: 'Sugar snap peas',
+    ing3quantity: '200g',
+    ingredient4: 'Worcestershire Sauce',
+    ing4quantity: '2 TBsp',
+    ingredient5: 'Chilli Jam',
+    ing5quantity: '2 tsp',
+    instructions: `1) Pull the skin off the chicken. Place the skin in a large non-stick frying pan on a medium heat to render and get golden, turning occasionally.  
+    2) Cut the bones out of the thighs and chuck into the pan for bonus flavour, then chop the meat into 2cm pieces.  
+    3) Move the skin and bones to one side of the pan, then add the meat alongside and cook for 5 minutes, or until golden, stirring occasionally.  
+    4) Once crispy, remove, chop and reserve the skin, discarding the bones.  
+    5) Meanwhile, cook the noodles in boiling salted water according to the packet instructions. Halve the sugar snaps lengthways.  
+    6) Once soft, drain the noodles, reserving a mugful of cooking water, then refresh under cold water.
+    7) Use scissors to snip the noodles into roughly 8cm lengths.
+    8) Stir the Worcestershire sauce and chilli jam into the chicken pan and let the jam melt, then add the sugar snaps and noodles.
+    9) Toss over the heat for 2 minutes, adding a splash of reserved noodle water to loosen, if needed.
+    10) Taste and season to perfection with sea salt and black pepper, then dish up and sprinkle over the reserved crispy chicken skin.`,
+    vegetarian: false,
+    difficultyHard: true,
+    photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/89081008.jpg?tr=w-800,h-1066',
+    source: 'https://www.jamieoliver.com/recipes/chicken-recipes/sweet-sour-chicken-noodles/',
+    meal: 'lunch'
+  },
+  {
+    recipe_name: 'Mango Rice Pudding',
+    description: 'Wtih Star Anise and Runny Honey',
+    ingredient1: 'Pudding Rice',
+    ing1quantity: '150g',
+    ingredient2: 'Star Anise',
+    ing2quantity: '4',
+    ingredient3: 'Frozen Mango Chunks',
+    ing3quantity: '250g'
+    ingredient4: 'Runny Honey',
+    ing4quantity: '4 TBsp',
+    ingredient5: 'Greek-Style coconut Yogurt',
+    ing5quantity: '4 TBsp',
+    instructions: `1) Place the rice, star anise, frozen mango, 3 tablespoons of honey and a tiny pinch of sea salt in a pan on a medium heat. 
+    2) Cover with 700ml of water and simmer for 25 minutes, or until thick and creamy, stirring occasionally.  
+    3) Stir through the yoghurt so it’s nice and creamy, then divide between your bowls.  
+    4) Drizzle over the remaining honey, and enjoy. Super-easy!`,
+    vegetarian: true,
+    difficultyHard: false,
+    photoLink: 'https://img.jamieoliver.com/jamieoliver/recipe-database/89080986.jpg?tr=w-800,h-1066',
+    source: 'https://www.jamieoliver.com/recipes/rice-recipes/mango-rice-pudding/',
+    meal: 'breakfast'
   }
 ]
 

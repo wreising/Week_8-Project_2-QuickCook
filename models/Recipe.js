@@ -64,11 +64,11 @@ Recipe.init({
   },
   vegetarian: {
     type: DataTypes.BOOLEAN,
-    allowNull: false
+    allowNull: true
   },
   difficultyHard: {
     type: DataTypes.BOOLEAN,
-    default: false
+    default: true
   },
   photoLink: {
     type: DataTypes.STRING,
