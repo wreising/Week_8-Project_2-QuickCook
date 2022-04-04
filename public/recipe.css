@@ -1,13 +1,13 @@
-html {
+/* html {
   background-color: rgb(34, 34, 34);
   font-size: 105%;
 }
 
 body {
   background-color: rgb(255, 255, 255);
-  /* border: 3px solid rgb(75, 75, 75); */
+  border: 3px solid rgb(75, 75, 75);
   box-shadow: 0 0 15px 5px rgba(104, 191, 231, 0.75);
-  /* box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75); */
+  box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
   border-radius: 20px;
   width: 90%;
   max-width: 960px;
@@ -26,4 +26,4 @@ body {
   font-weight: 400;
   font-size: 1.5em;
   color: rgb(13, 63, 63);
-}
+} */
