@@ -17,6 +17,7 @@
     "dotenv": "^16.0.0",
     "env": "^0.0.2",
     "express": "^4.17.3",
+    "heroku": "^7.60.1",
     "marked": "^4.0.12",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
@@ -30,6 +31,5 @@
   "bugs": {
     "url": "https://github.com/wreising/Week_8-Project_2-QuickCook/issues"
   },
-  "homepage": "https://github.com/wreising/Week_8-Project_2-QuickCook#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/wreising/Week_8-Project_2-QuickCook#readme"
 }

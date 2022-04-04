@@ -9,3 +9,4 @@ btnIngredient.addEventListener("click", function(){
 function submitRecipe() {
   document.getElementById("recipe").submit();
 }
+});*/
