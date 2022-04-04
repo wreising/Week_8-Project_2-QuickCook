@@ -12,7 +12,7 @@ Recipe.init({
   // },
   recipe_name: {
     type: DataTypes.STRING(1000),
-    allowNull: false
+    allowNull: true
   },
   description: {
     type: DataTypes.STRING(1000),
@@ -20,7 +20,7 @@ Recipe.init({
   },
   ingredient1: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   },
   ing1quantity: {
     type: DataTypes.STRING,
@@ -28,7 +28,7 @@ Recipe.init({
   },
   ingredient2: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   },
   ing2quantity: {
     type: DataTypes.STRING,
@@ -36,7 +36,7 @@ Recipe.init({
   },
   ingredient3: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   },
   ing3quantity: {
     type: DataTypes.STRING,
@@ -44,7 +44,7 @@ Recipe.init({
   },
   ingredient4: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   },
   ing4quantity: {
     type: DataTypes.STRING,
@@ -52,7 +52,7 @@ Recipe.init({
   },
   ingredient5: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   },
   ing5quantity: {
     type: DataTypes.STRING,
@@ -60,15 +60,17 @@ Recipe.init({
   },
   instructions: {
     type: DataTypes.STRING(5000),
-    allowNull: false
+    allowNull: true
   },
   vegetarian: {
     type: DataTypes.BOOLEAN,
-    allowNull: true
+    allowNull: true,
+    default: false
   },
   difficultyHard: {
     type: DataTypes.BOOLEAN,
-    allowNull: true
+    allowNull: true,
+    default: false
   },
   photoLink: {
     type: DataTypes.STRING,
