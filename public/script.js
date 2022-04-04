@@ -4,4 +4,9 @@ const ingredientGroup = document.getElementById("ingredientGroup")
 btnIngredient.addEventListener("click", function(){
   console.log('add ingredient btn click')
   ingredientGroup.appendChild('div')
+});
+
+function submitRecipe() {
+  document.getElementById("recipe").submit();
+}
 });*/

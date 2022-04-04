@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "custom-env": "^2.0.1",
     "dot": "^1.1.3",
     "dotenv": "^16.0.0",
     "env": "^0.0.2",
