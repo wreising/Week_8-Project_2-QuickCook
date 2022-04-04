@@ -56,17 +56,13 @@
     </div>
   </nav>
   <!--====form section start====-->
-  <div class="recipe-detail" style="margin: 3%;">
+  <div class="register" style="margin: 3%;">
     <h2 class="headerTitle">Create Account</h2> <br>
-    <form action="/users/create" method="POST">
-      <label>Full Name</label>
-      <input type="text" placeholder="Enter Full Name" name="fullName" required> <br><br>
+    <form action="api/users" method="POST">
       <label>Email Address</label>
-      <input type="email" placeholder="Enter Email Address" name="emailAddress" required> <br><br>
-      <label>City</label>
-      <input type="city" placeholder="Enter Full City" name="city" required> <br><br>
-      <label>Country</label>
-      <input type="text" placeholder="Enter Full Country" name="country" required> <br><br>
+        <input type="text" placeholder="Enter Email Address" name="email" required> <br><br>
+      <label>Password</label>
+        <input type="text" placeholder="Enter Password" name="password" required> <br><br>
       <button type="submit">Submit</button>
   </div>
   </div>

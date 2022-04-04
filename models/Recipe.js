@@ -68,8 +68,7 @@ Recipe.init({
   },
   difficultyHard: {
     type: DataTypes.BOOLEAN,
-    allowNull: true,
-    default: true
+    allowNull: true
   },
   photoLink: {
     type: DataTypes.STRING,
