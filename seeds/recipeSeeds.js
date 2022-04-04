@@ -264,7 +264,7 @@ const recipeData = [
     ingredient2: 'Star Anise',
     ing2quantity: '4',
     ingredient3: 'Frozen Mango Chunks',
-    ing3quantity: '250g'
+    ing3quantity: '250g',
     ingredient4: 'Runny Honey',
     ing4quantity: '4 TBsp',
     ingredient5: 'Greek-Style coconut Yogurt',
