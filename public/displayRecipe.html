@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./recipe.css">
+  <title>Display all Recipes</title>
+</head>
+
+<body>
+  <h1>All Recipes</h1>
+  <div id="myData"></div>
+  <script>
+    fetch('api/recipes/')
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (data) {
+        appendData(data)
+      })
+      .catch(function (err) {
+        console.log('error: ' + err)
+      })
+    function appendData(data) {
+      var mainContainer = document.getElementById("myData")
+      for (var i = 0; i < data.length; i++) {
+        var div = document.createElement("div")
+        div.innerHTML = `<span id='name'>Recipe Name:</span> ${data[i].recipe_name}<br>
+        <span id='name'>Description:</span> ${data[i].description}<br><br>
+        <span id='name'>Ingredients:</span><br>
+        ${data[i].ingredient1} -  ${data[i].ing1quantity}<br>
+        ${data[i].ingredient2} -  ${data[i].ing2quantity}<br>
+        ${data[i].ingredient3} -  ${data[i].ing3quantity}<br>
+        ${data[i].ingredient4} -  ${data[i].ing4quantity}<br>
+        ${data[i].ingredient5} -  ${data[i].ing5quantity}<br><br>
+        <span id='name'>Instructions:</span><br>
+        ${data[i].instructions}<br><br>
+        Vegetarian? ${data[i].vegetarian}<br>
+        Difficulty Hard? ${data[i].difficultyHard}<br>
+        <a href="${data[i].photoLink}">Photo</a><br>
+        <a href="${data[i].source}">Source - Jamie Oliver's 5 Ingredients</a><br>
+        Meal Type: ${data[i].meal}<br><br><br><br>
+        `
+        mainContainer.appendChild(div)
+      }
+    }
+  </script>
+</body>
+
+</html>
