@@ -5,10 +5,11 @@ const bcrypt = require('bcrypt')
 class User extends Model { }
 
 User.init({
-  // username: {
-  //   type: DataTypes.STRING,
-  //   allowNull: false
-  // },
+  username: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    defaultValue: "newuser"
+  },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -24,6 +25,7 @@ User.init({
       len: [8]
     },
   },
+
 }, {
   hooks: {
     beforeCreate: async (newUserData) => {
