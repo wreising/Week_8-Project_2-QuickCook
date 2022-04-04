@@ -24,6 +24,13 @@
   height: 730px;
 }
 
+.searchTags {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
 #overlay {
   position: fixed;
   width: 100%;
