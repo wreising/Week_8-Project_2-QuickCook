@@ -27,8 +27,9 @@
 .searchTags {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 
 #overlay {
   position: fixed;

@@ -46,10 +46,6 @@
             <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="ie. beef" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -144,9 +140,9 @@
     <br>
     <p class="textFormat">Five Ingredient Recipes to Make Cooking Quick and Easy</p>
     <form class="d-flex" id="searchBar">
-      <sp-theme scale="large" color="light" style="background-color: rgb(255, 236, 214);" class="searchTags">
-        <sp-field-label for="horizontal">
-          Choose a category:
+      <sp-theme scale="large" color="light" style="background-color: rgb(255, 236, 214); display: flex; justify-content: space-between; padding: 3%;">
+        <sp-field-label for="horizontal" style="padding-right: 15px;">
+          Choose categories:
         </sp-field-label>
         <sp-field-group horizontal id="horizontal">
           <sp-checkbox value="breakfast">Breakfast</sp-checkbox>
