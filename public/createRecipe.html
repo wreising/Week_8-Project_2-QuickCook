@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script defer src="./script.js"></script>
+  <script defer src="./createRecipe.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <title>Quick Cook - Easy Meals for Less</title>
 </head>
 <body class="mainFont">
@@ -84,10 +85,10 @@
   <!--====form section start====-->
   <div class="recipe-entry" style="margin: 3%;">
     <h2 class="headerTitle">Create New Recipe</h2>
-    <form action="api/recipes" method="POST">
+    <form>
       <label>Recipe Name</label>
         <input type="text" placeholder="Enter Recipe Name" name="recipe_name" required><br><br>
-      <textarea name="description" class="createRecipeDescriptionBox" rows="15" columns="30">Enter Description</textarea><br><br>
+      <textarea name="description" placeholder="Enter Description" class="createRecipeDescriptionBox" rows="15" columns="30"></textarea><br><br>
       <label>Ingredient 1</label>
         <input type="text" placeholder="Enter 1st Ingredient" name="ingredient1" required><br><br>
       <label>Ingredient 1 Quantity</label>
@@ -108,19 +109,16 @@
         <input type="text" placeholder="Enter 5th Ingredient" name="ingredient5" required><br><br>
       <label>Ingredient 5 Quantity</label>
         <input type="text" placeholder="Enter Quantity" name="ing5quantity" required><br><br>
-      <textarea name="instructions" class="createRecipeDescriptionBox" rows="15" columns="30">Enter Instructions</textarea><br><br>
-      <sp-theme scale="large" color="light" style="background-color: rgb(255, 236, 214); font-family: 'Lora', serif;" class="searchTags">
-        <sp-field-label for="horizontal" style="color: black">
+      <textarea name="instructions" placeholder="Enter Instructions" class="createRecipeDescriptionBox" rows="15" columns="30"></textarea><br><br>
           Choose Meal Type:
-        </sp-field-label>
-        <sp-field-group horizontal id="horizontal">
-          <sp-checkbox value="breakfast">Breakfast</sp-checkbox>
-          <sp-checkbox value="lunch">Lunch</sp-checkbox>
-          <sp-checkbox value="dinner">Dinner</sp-checkbox>
-          <sp-checkbox value="side">Side</sp-checkbox>
-        </sp-field-group>
-      </sp-theme>
-      <button type="submit">Submit</button>
+        <select name="meal">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="side">Side</option>
+        </select><br>
+      <input type="button" id="submitRecipe" value="Submit"></input>
+      </form>
   </div>
   </div>
 

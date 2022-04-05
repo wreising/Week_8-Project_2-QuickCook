@@ -5,11 +5,6 @@ const bcrypt = require('bcrypt')
 class User extends Model { }
 
 User.init({
-  username: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    defaultValue: "newuser"
-  },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
