@@ -9,18 +9,19 @@
 // function getAccountInfo = () => {
   
 // }
-const mealTypeBool = document.getElementById('mealType').children.getAttribute('aria-selected')
+const mealTypeBool = document.getElementById('mealType').childNodes.ariaSelected
+const mealTypeID = document.getElementById('mealType').childNodes.id
 const searchTag = () => {
-  if (mealTypeBool = true && id= sp-menu-item-0) {
+  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-0') {
     window.location = "./tagBreakfast.html"
   }
-  if (mealTypeBool= true && id= sp-menu-item-1) {
+  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-1') {
     window.location = "./tagLunch.html"
   }
-  if (mealTypeBool= true && id= sp-menu-item-2) {
+  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-2') {
     window.location = "./tagDinner.html"
   }
-  if (mealTypeBool= true && id= sp-menu-item-3) {
+  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-3') {
     window.location = "./displayRecipe.html"
   }
 }
