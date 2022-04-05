@@ -17,7 +17,7 @@
 <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="./index.html">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,13 +30,13 @@
               Categories
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Breakfast</a></li>
-              <li><a class="dropdown-item" href="#">Lunch</a></li>
-              <li><a class="dropdown-item" href="#">Dinner</a></li>
+              <li><a class="dropdown-item" href="./tagBreakfast.html">Breakfast</a></li>
+              <li><a class="dropdown-item" href="./tagLunch.html">Lunch</a></li>
+              <li><a class="dropdown-item" href="./tagDinner.html">Dinner</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Misc.</a></li>
+              <li><a class="dropdown-item" href="./displayRecipe.html">All</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -68,7 +68,6 @@
     </div>
   </header>
 <!-- Login Modal -->
-
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -142,18 +141,18 @@
     <form class="d-flex" id="searchBar">
       <sp-theme scale="large" color="light" style="background-color: rgb(255, 236, 214); display: flex; justify-content: space-between; padding: 3%;">
         <sp-field-label for="horizontal" style="padding-right: 15px;">
-          Choose categories:
+          Choose Meal Type:
         </sp-field-label>
         <sp-field-group horizontal id="horizontal">
           <sp-checkbox value="breakfast">Breakfast</sp-checkbox>
           <sp-checkbox value="lunch">Lunch</sp-checkbox>
-          <sp-checkbox checked value="dinner">Dinner</sp-checkbox>
+          <sp-checkbox value="dinner">Dinner</sp-checkbox>
           <sp-checkbox value="side">Side</sp-checkbox>
         </sp-field-group>
       </sp-theme>
       <button class="btn btn-success" type="submit">Search</button>
     </form>
-  </div> -->
+  </div>
   <footer class="footerFormat">Footer™ 2022</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

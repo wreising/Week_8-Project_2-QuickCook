@@ -31,13 +31,13 @@
               Categories
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Breakfast</a></li>
-              <li><a class="dropdown-item" href="#">Lunch</a></li>
-              <li><a class="dropdown-item" href="#">Dinner</a></li>
+              <li><a class="dropdown-item" href="./tagBreakfast.html">Breakfast</a></li>
+              <li><a class="dropdown-item" href="./tagLunch.html">Lunch</a></li>
+              <li><a class="dropdown-item" href="./tagDinner.html">Dinner</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Misc.</a></li>
+              <li><a class="dropdown-item" href="./displayRecipe.html">All</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -50,6 +50,37 @@
       </div>
     </div>
   </nav>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="api/login" method="POST">
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="email">Email</span>
+              <input type="text" class="form-control" placeholder="ezchef@email.com" aria-label="email"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="password">Password</span>
+              <input type="text" class="form-control" placeholder="Password" aria-label="Password"
+                aria-describedby="basic-addon1">
+            </div>
+            <p>New to the site? Register here!</p>
+            <a class="btn btn-primary" href="form.html">Register</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
   <!--====form section start====-->
   <div class="recipe-entry" style="margin: 3%;">
     <h2 class="headerTitle">Create New Recipe</h2>
@@ -86,20 +117,18 @@
         <input type="text" placeholder="Enter URL" name="photoLink" ><br><br>
       <label>Source</label>
         <input type="text" placeholder="Enter URL" name="source"><br><br>
-      <label>Meal Type</label>
-        <input type="text" placeholder="Enter Meal Type" name="meal"><br><br>
       <sp-theme scale="large" color="light" style="background-color: rgb(255, 236, 214); font-family: 'Lora', serif;" class="searchTags">
         <sp-field-label for="horizontal" style="color: black">
-          Choose Categories:
+          Choose Meal Type:
         </sp-field-label>
         <sp-field-group horizontal id="horizontal">
           <sp-checkbox value="breakfast">Breakfast</sp-checkbox>
           <sp-checkbox value="lunch">Lunch</sp-checkbox>
-          <sp-checkbox checked value="dinner">Dinner</sp-checkbox>
+          <sp-checkbox value="dinner">Dinner</sp-checkbox>
           <sp-checkbox value="side">Side</sp-checkbox>
         </sp-field-group>
       </sp-theme>
-      <button type="submit">Submit</button>
+      <a type="submit" class="btn btn-primary" href='./index.html'>Submit</a>
   </div>
   </div>
 
