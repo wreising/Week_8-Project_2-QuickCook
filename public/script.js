@@ -1,4 +1,7 @@
 document.getElementById("registerForm").addEventListener("click", submitData);
+document.getElementById('logged').addEventListener('click',()=> {
+  alert('User Logged in')
+})
 
 function submitData(){
 const user = new XMLHttpRequest();
