@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
   <title>Quick Cook - Easy Meals for Less</title>
 </head>
 
@@ -54,12 +56,11 @@
   <!--====form section start====-->
   <div class="register" style="margin: 3%;">
     <h2 class="headerTitle">Create Account</h2> <br>
-    <form action="api/users" method="POST">
-      <label>Email Address</label>
-        <input type="text" placeholder="Enter Email Address" name="email" required id="emailValue"> <br><br>
-      <label>Password</label>
-        <input type="text" placeholder="Enter Password" name="password" required id="passwordValue"> <br><br>
-      <button type="submit" id="accountCreateBtn">Submit</button>
+    <form><label for="email">Email Address</label>
+    <input placeholder="Enter Email Address" name="email" required id="email"> <br><br>
+    <label>Password</label>
+    <input placeholder="Enter Password" name="password" required id="password"> <br><br>
+    <input type="button" id="registerForm" value="Submit"></input></form>
   </div>
   </div>
   <!--====form section start====-->
