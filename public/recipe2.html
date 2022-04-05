@@ -53,7 +53,7 @@
       </div>
     </div>
   </nav>
-  <h1 class="header headerTitle">All Recipes</h1>
+  <h1 class="header headerTitle" id="title">All Recipes</h1>
 
   </li>
   </ul>
@@ -62,7 +62,6 @@
   </nav>
 
   <div id="content">
-    <h1>Recipe</h1>
     <div id="myRecipe"></div>
   </div>
   <script>
@@ -77,9 +76,9 @@
         console.log('error: ' + err)
       })
     function render(data) {
-      document.getElementById("myRecipe").innerHTML =
-        `<span id='name'>Recipe Name:</span> ${data.recipe_name}<br>
-        <span id='name'>Description:</span> ${data.description}<br><br>
+        document.getElementById("title").innerHTML = data.recipe_name
+        document.getElementById("myRecipe").innerHTML =
+        `<span id='name'>Description:</span> ${data.description}<br><br>
         <span id='name'>Ingredients:</span><br>
         ${data.ingredient1} -  ${data.ing1quantity}<br>
         ${data.ingredient2} -  ${data.ing2quantity}<br>
