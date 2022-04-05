@@ -71,7 +71,7 @@
     <div id="myRecipe"></div>
   </div>
   <script>
-    fetch('api/recipes/12')
+    fetch('api/recipes/6')
       .then(function (response) {
         return response.json()
       })
@@ -94,7 +94,6 @@
         <span id='name'>Instructions:</span><br>
         ${data.instructions}<br><br>
         Vegetarian? ${data.vegetarian}<br>
-        Difficulty Hard? ${data.difficultyHard}<br>
         <a href="${data.photoLink}">Photo</a><br><br><br><br>
         `
       mainContainer.appendChild(div)

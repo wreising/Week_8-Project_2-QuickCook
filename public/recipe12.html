@@ -71,7 +71,7 @@
     <div id="myRecipe"></div>
   </div>
   <script>
-    fetch('api/recipes/1')
+    fetch('api/recipes/12')
       .then(function (response) {
         return response.json()
       })
@@ -82,8 +82,8 @@
         console.log('error: ' + err)
       })
     function render(data) {
-      document.getElementById("myRecipe").innerHTML = 
-       `<span id='name'>Recipe Name:</span> ${data.recipe_name}<br>
+      document.getElementById("myRecipe").innerHTML =
+        `<span id='name'>Recipe Name:</span> ${data.recipe_name}<br>
         <span id='name'>Description:</span> ${data.description}<br><br>
         <span id='name'>Ingredients:</span><br>
         ${data.ingredient1} -  ${data.ing1quantity}<br>
@@ -93,10 +93,11 @@
         ${data.ingredient5} -  ${data.ing5quantity}<br><br>
         <span id='name'>Instructions:</span><br>
         ${data.instructions}<br><br>
-        Vegetarian? ${data.vegetarian}<br><br><br><br>
+        Vegetarian? ${data.vegetarian}<br>
+        <a href="${data.photoLink}">Photo</a><br><br><br><br>
         `
-        mainContainer.appendChild(div)
-      }
+      mainContainer.appendChild(div)
+    }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
