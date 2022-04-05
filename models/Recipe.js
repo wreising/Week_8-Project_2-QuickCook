@@ -67,19 +67,6 @@ Recipe.init({
     allowNull: true,
     default: false
   },
-  difficultyHard: {
-    type: DataTypes.BOOLEAN,
-    allowNull: true,
-    default: false
-  },
-  photoLink: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  source: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
   meal: {
     type: DataTypes.STRING,
     allowNull: true

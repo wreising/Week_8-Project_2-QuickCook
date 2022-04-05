@@ -6,42 +6,34 @@
 
 ## Project Description:
 
-R
+Many recipes call themselves quick, but how often are they easy? If they are easy, how often are they good?
 
-Screenshot
+Here is an app dedicated to quality recipes that feature only 5 ingredients.
+
+The site has recipes to browse and also allows the logged in user to post their own recipes.
+
+The form for doing so limits the recipe to 5 ingredients so that they are in keeping with the spirit of the site.
+
+![Screenshot](./assets/Screen-Shot-2022-04-04.png)
 
 ---
 
 ## Usage:
 
+If running locally, download all the files from the GitHub repo below, run `npm i`, then run `npm start` and go-to localhost:3000/index.html
 
+or, go-to
+
+https://bootcamp-project-2-quickcook.herokuapp.com
 
 ---
 
-## Project Requirements
+**GitHub Repo:**
 
+https://github.com/wreising/Week_8-Project_2-QuickCook
 
-🟩 Must use Node.js and Express.js to create a 🟩 RESTful API  
-🟩 Must use MySQL and the Sequelize ORM for the database  
-🟩 Must have both GET and POST routes for retrieving and adding new data  
-🟩 Must use at least one new library, package, or technology that we haven’t discussed
+**Heroku:**
 
+https://bootcamp-project-2-quickcook.herokuapp.com
 
-> 🟩 https://github.com/markedjs/marked  
-> 🟩 https://reactjs.org  
-> 🟩 https://github.com/markedjs/marked  
-
-
-🟩 Must have a folder structure that meets the MVC paradigm  
-🟩 Must include authentication (express-session and cookies)  
-🟩 Must protect API keys and sensitive information with environment variables  
-✅ Must be deployed using Heroku
-
-> ✅ https://bootcamp-project-2-quickcook.herokuapp.com
-
-🟩 Must have a polished UI  
-🟩 Must be responsive  
-🟩 Must be interactive (i.e., accept and respond to user input)  
-🟩 Must meet good-quality coding standards (file structure, best practices, etc.)  
-🟩 Must have a professional README (unique name, description, link to the deployed app)  
-
+*© 2022 QuickCook LLC.*

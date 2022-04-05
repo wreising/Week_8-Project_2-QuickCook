@@ -1,12 +1,11 @@
-/*const btnIngredient = document.getElementById("btnIngredient")
-const ingredientGroup = document.getElementById("ingredientGroup")
+// const accountCreateBtn = document.getElementById('accountCreateBtn')
+// const emailValue = document.getElementById('emailValue').innerHTML
+// const passwordValue = document.getElementById('passwordValue').innerHTML
 
-btnIngredient.addEventListener("click", function(){
-  console.log('add ingredient btn click')
-  ingredientGroup.appendChild('div')
-});
+// const accountCreateBtn.addEventListener('click', function()) {
+//   getAccountInfo()
+// }
 
-function submitRecipe() {
-  document.getElementById("recipe").submit();
-}
-});*/
+// function getAccountInfo = () => {
+  
+// }
