@@ -9,19 +9,19 @@
 // function getAccountInfo = () => {
   
 // }
-const mealTypeBool = document.getElementById('mealType').childNodes.ariaSelected
-const mealTypeID = document.getElementById('mealType').childNodes.id
-const searchTag = () => {
-  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-0') {
-    window.location = "./tagBreakfast.html"
-  }
-  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-1') {
-    window.location = "./tagLunch.html"
-  }
-  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-2') {
-    window.location = "./tagDinner.html"
-  }
-  if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-3') {
-    window.location = "./displayRecipe.html"
-  }
-}
+// const mealTypeBool = document.getElementById('mealType').childNodes.ariaSelected
+// const mealTypeID = document.getElementById('mealType').childNodes.id
+// const searchTag = () => {
+//   if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-0') {
+//     window.location = "./tagBreakfast.html"
+//   }
+//   if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-1') {
+//     window.location = "./tagLunch.html"
+//   }
+//   if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-2') {
+//     window.location = "./tagDinner.html"
+//   }
+//   if (mealTypeBool = true && mealTypeID.id= 'sp-menu-item-3') {
+//     window.location = "./displayRecipe.html"
+//   }
+// }
