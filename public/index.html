@@ -143,13 +143,13 @@
         <sp-field-label for="horizontal" style="padding-right: 15px;">
           Choose Meal Type:
         </sp-field-label>
-        <sp-field-group horizontal id="horizontal">
-          <sp-checkbox value="breakfast">Breakfast</sp-checkbox>
-          <sp-checkbox value="lunch">Lunch</sp-checkbox>
-          <sp-checkbox value="dinner">Dinner</sp-checkbox>
-          <sp-checkbox value="side">Side</sp-checkbox>
-        </sp-field-group>
-      </sp-theme>
+        <sp-picker id="mealType">
+          <span slot="label">Choose a location:</span>
+          <sp-menu-item>Breakfast</sp-menu-item>
+          <sp-menu-item>Lunch</sp-menu-item>
+          <sp-menu-item>Dinner</sp-menu-item>
+          <sp-menu-item>All</sp-menu-item>
+        </sp-picker>
       <button class="btn btn-success" type="submit">Search</button>
     </form>
   </div>
