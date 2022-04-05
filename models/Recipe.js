@@ -12,15 +12,15 @@ Recipe.init({
   // },
   recipe_name: {
     type: DataTypes.STRING(1000),
-    allowNull: true
+    allowNull: false
   },
   description: {
     type: DataTypes.STRING(1000),
-    allowNull: true
+    allowNull: false
   },
   ingredient1: {
     type: DataTypes.STRING,
-    allowNull: true
+    allowNull: false
   },
   ing1quantity: {
     type: DataTypes.STRING,
@@ -60,16 +60,11 @@ Recipe.init({
   },
   instructions: {
     type: DataTypes.STRING(5000),
-    allowNull: true
-  },
-  vegetarian: {
-    type: DataTypes.BOOLEAN,
-    allowNull: true,
-    default: false
+    allowNull: false
   },
   meal: {
     type: DataTypes.STRING,
-    allowNull: true
+    allowNull: false
   },
 }, {
   // hooks: {
