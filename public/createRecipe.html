@@ -109,14 +109,6 @@
       <label>Ingredient 5 Quantity</label>
         <input type="text" placeholder="Enter Quantity" name="ing5quantity" required><br><br>
       <textarea name="instructions" class="createRecipeDescriptionBox" rows="15" columns="30">Enter Instructions</textarea><br><br>
-      <label>Vegetarian</label>
-        <input type="checkbox" name="vegetarian" value="true"><br><br>
-      <label>Difficulty - Hard?</label>
-        <input type="checkbox" name="difficultyHard" value="true"><br><br>
-      <label>Photo Link</label>
-        <input type="text" placeholder="Enter URL" name="photoLink" ><br><br>
-      <label>Source</label>
-        <input type="text" placeholder="Enter URL" name="source"><br><br>
       <sp-theme scale="large" color="light" style="background-color: rgb(255, 236, 214); font-family: 'Lora', serif;" class="searchTags">
         <sp-field-label for="horizontal" style="color: black">
           Choose Meal Type:
@@ -131,6 +123,40 @@
       <button type="submit">Submit</button>
   </div>
   </div>
+
+  <!-- Login Modal -->
+  
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="api/login" method="POST">
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="email">Email</span>
+              <input type="text" class="form-control" placeholder="ezchef@email.com" aria-label="email"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="password">Password</span>
+              <input type="text" class="form-control" placeholder="Password" aria-label="Password"
+                aria-describedby="basic-addon1">
+            </div>
+            <p>New to the site? Register here!</p>
+            <a class="btn btn-primary" href="form.html">Register</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
   <!--====form section start====-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
